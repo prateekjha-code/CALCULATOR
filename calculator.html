@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+    <title>MY CALCULATOR</title>
+    <link rel="stylesheet" href="css/calculator%20styles.css">
+</head>
+<body>
+    <form name="calculator" class="calculator">
+        
+    <table class="table">
+        <input type="text" name="display" class="display" disabled>
+        
+        
+        
+    <div class="row">
+    <div class="col-3">
+        <input type="button" value="9" class="digits" name="nine" onclick="calculator.display.value +='9'">
+        <input type="button" value="8" class="digits" name="eight" onclick="calculator.display.value +='8'">
+        <input type="button" value="7" class="digits" name="seven" onclick="calculator.display.value +='7'">
+        <input type="button" value="/" name="division"   class="operator" onclick="calculator.display.value +='/'">
+        
+    </div>
+            
+    
+    
+    </div>
+<div class="row">
+    <div class="col-3">
+        <input type="button" value="4" class="digits" name="four" onclick="calculator.display.value +='4'">
+        <input type="button" value="5" class="digits" name="five" onclick="calculator.display.value +='5'">
+        <input type="button" value="6" class="digits" name="six" onclick="calculator.display.value +='6'">
+        <input type="button" class="operator" value="x" name="multiply" onclick="calculator.display.value +='*'">
+    </div>
+ </div>
+        <div class="row">
+    <div class="col-3">
+        <input type="button" class="digits" value="3" name="three" onclick="calculator.display.value +='3'">
+        <input type="button" class="digits" value="2" name="two" onclick="calculator.display.value +='2'">
+        <input type="button" class="digits" value="1" name="one" onclick="calculator.display.value +='1'">
+         <input type="button" class="operator" value="-" name="subtraction" onclick="calculator.display.value +='-'">
+    </div>
+ </div>
+        <div class="row">
+    <div class="col-3">
+        <input type="button" class="clear" value="c" name="clear" onclick="calculator.display.value =''">
+        <input type="button" class="digits" value="0" name="zero" onclick="calculator.display.value +='0'">
+        <input type="button" class="dot" value="+" name="decimal" onclick="calculator.display.value +='+'">
+         <input type="button" class="operator" value="=" name="doit" onclick="calculator.display.value = eval(calculator.display.value)">
+    </div>
+ </div>
+        
+        
+    </table>
+
+
+</form>
+
+
+</body>
